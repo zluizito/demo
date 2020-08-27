@@ -22,3 +22,30 @@ $(function() {
 $('#slider_productos').carousel({
 	interval: 4000
 });
+
+
+//Subir al cielo
+$(document).ready(function() {
+	$(window).scroll(function() {
+    	if ($(this).scrollTop() > 60) {
+     		$('#btnTop').fadeIn();
+    	} else {
+    		$('#btnTop').fadeOut();
+    	}
+	});
+
+	$('#btnTop').click(function() {
+    	$("html, body").animate({
+      		scrollTop: 0
+    	}, 1000);
+    	return false;
+	});
+});
+
+
+//Mostrar logo
+$(function() {
+    $(window).on("scroll", function() {
+        $(window).scrollTop() > 50 ? $(".img_hide").addClass("show-img") : $(".img_hide").removeClass("show-img")
+    })
+});

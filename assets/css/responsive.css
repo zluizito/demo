@@ -28,6 +28,11 @@
         border: 0!important
     }
 
+    .modal-content .close {
+        color: #fff!important;
+        opacity: 1!important
+    }
+
     
 
 
