@@ -1,0 +1,21 @@
+/* Cards primer bloque */
+@media screen and (max-width:768px){
+    .details-card {
+        margin: 10px 0 0 0
+    }
+
+    .box-shadow {
+        border-radius: 0
+    }
+
+    .lib-panel img {
+        margin: 0 0px 0 15px
+    }
+
+    .media svg {
+        margin-left: 20px
+    }
+
+
+
+}
