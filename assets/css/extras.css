@@ -1,0 +1,133 @@
+/********* Boton flotante **********/
+
+.redes-flotantes {
+  position: fixed;
+  right: 8px;
+  top: 90%;
+  z-index: 20;
+}
+
+.redes-flotantes img {
+  float: right;
+  clear: right;
+  margin: 5px;
+  -moz-transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -o-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.redes-flotantes img:hover {
+  -moz-transform: scale(1.1) rotate(6deg);
+  -webkit-transform: scale(1.1) rotate(6deg);
+  -o-transform: scale(1.1) rotate(6deg);
+  -ms-transform: scale(1.1) rotate(6deg);
+  transform: scale(1.1) rotate(6deg);
+}
+
+/**********************************************/
+
+
+
+
+
+
+
+.details-card {
+  margin: 120px 0 0 0
+}
+
+.card-content {
+  background: #ffffff;
+  border: 4px;
+  box-shadow: inset 0 -1px 0 rgba(79,131,170,.2), 0 0 30px rgba(0,0,0,.07);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-img span {
+  position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #1ABC9C;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+
+.card-desc {
+  padding: 1.25rem;
+}
+
+.card-desc h3 {
+  color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+  color: #747373;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align:center
+}
+
+.btn-centrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-card{
+  color: #fff;
+  background-color: #f47735;
+  padding: 10px 30px;
+  font-size: 14px;
+  margin: 0;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #fff;
+}
+.btn-card:hover {
+    background: orange;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+/* End card section */
