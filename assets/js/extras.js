@@ -4,7 +4,6 @@ $('#slider_home').carousel({
 })
 
 
-
 //Autoplay bloque reproductor
 $(function() {
     $(".video").click(function() {
@@ -16,4 +15,10 @@ $(function() {
             $(theModal + ' iframe').attr('src', videoSRC);
         });
     });
+});
+
+
+//Slider de productos
+$('#slider_productos').carousel({
+	interval: 4000
 });
