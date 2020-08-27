@@ -1,10 +1,11 @@
-/********* Boton flotante **********/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/********* Boton flotante **********/
 .redes-flotantes {
   position: fixed;
   right: 8px;
   top: 90%;
-  z-index: 20;
+  z-index: 9999;
 }
 
 .redes-flotantes img {
@@ -34,10 +35,7 @@
 
 
 
-
-
-
-
+/********* PRIMER BLOQUE CARDS **********/
 .details-card {
   margin: 120px 0 60px 0
 }
@@ -45,7 +43,16 @@
 .card-content {
   background: #fff;
   padding: 40px 0;
-  box-shadow: inset 0 -1px 0 rgba(79,131,170,.2), 0 0 30px rgba(0,0,0,.07)
+  box-shadow: inset 0 -1px 0 rgba(79,131,170,.2), 0 0 30px rgba(0,0,0,.07);
+  border-radius: 4px;
+  transform: scale(.99);
+  transition: opacity .2s ease-out,box-shadow .2s ease-out,transform .5s cubic-bezier(.22,.76,.49,.94),-webkit-transform .5s cubic-bezier(.22,.76,.49,.94)!important
+}
+
+.card-content:hover {
+  -webkit-transform: scale(1.001);
+  box-shadow: 0 1px 20px -5px rgba(0,0,0,.3);
+  transform: scale(1.001);
 }
 
 .card-img {
@@ -119,12 +126,11 @@
   color: #fff;
   background-color: #f47735;
   padding: 10px 30px;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
-  text-transform: uppercase;
   white-space: normal;
   word-wrap: break-word;
   color: #fff;
@@ -136,20 +142,17 @@ a.btn-card {
     text-decoration: none;
     color: #fff;
 }
-/* End card section */
+
+/**********************************************/
 
 
 
 
 
 
-
+/********* BLOQUE REPRODUCTOR **********/
 .lib-panel {
     margin-bottom: 20Px;
-}
-.lib-panel img {
-    width: 100%;
-    background-color: transparent;
 }
 
 .lib-panel .row,
@@ -158,10 +161,6 @@ a.btn-card {
   background-color: #fff
 }
 
-
-.lib-panel .lib-row {
-  padding: 0 20px 0 20px;
-}
 
 .lib-panel .lib-row.lib-header {
   background-color: #fff;
@@ -178,15 +177,13 @@ a.btn-card {
 
 .lib-panel .lib-row.lib-desc {
   position: relative;
-  height: 100%;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
+  margin-top: 20px
 }
-.lib-panel .lib-row.lib-desc a{
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  left: 20px;
+.lib-panel .lib-row.lib-desc a {
+  margin: 20px 0;
+  left: 20px
 }
 
 .row-margin-bottom {
@@ -213,11 +210,156 @@ a.btn-card {
   margin-left: 0
 }
 
+.media:hover{
+  color: #f47735;
+}
+
 .media svg {
   background: #72727221;
   padding: 10px
 }
 
 .media-body h4{
-  margin-left:10px
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
+
+.imagen-holder {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.imagen-bg{
+  width: 100%;
+  border:0
+}
+
+.play-image {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.play-image:hover{
+  filter: invert(69%) sepia(73%) saturate(4270%) hue-rotate(339deg) brightness(101%) contrast(91%);
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  border-radius: 50%;
+  cursor: pointer
+}
+/**********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********* FOOTER **********/
+#footer {
+  padding: 60px 0 30px 0;
+  background: linear-gradient(to top, rgb(232 85 52 / 96%), rgb(247, 183, 51))
+}
+
+#footer h5{
+  padding-bottom: 10px;
+  color:#fff
+}
+
+#footer p{
+  color: #fff
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li{
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size:18px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#fff;
+}
+
+#footer ul.social li a:hover{
+  color:#eee;
+
+}
+
+#footer ul.quick-links li{
+  padding: 10px 0;
+  margin-left:10px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover{
+  padding: 10px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+
+#footer ul.quick-links li a i{
+  margin-right: 8px
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.footer_space{
+  padding-bottom:20px
+}
+
+#footer .list-inline-item:not(:last-child) {
+  margin-right: 15px
+}
+
+/**********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

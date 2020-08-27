@@ -33,8 +33,8 @@
     animation-fill-mode: both;
 }
 #slider_home .container {max-width: 1430px;  }
-#slider_home .carousel-item{height:100%; min-height:550px; }
-#slider_home{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
+#slider_home .carousel-item{height:100%; min-height:650px; }
+#slider_home{position:relative; z-index:1; background:url(../images/header.png) center center no-repeat; background-size:cover; }
 
 .carousel-control-next, .carousel-control-prev{height:40px; width:40px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
 

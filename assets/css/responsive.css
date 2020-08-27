@@ -7,14 +7,79 @@
     .box-shadow {
         border-radius: 0
     }
-
-    .lib-panel img {
-        margin: 0 0px 0 15px
-    }
-
+    
     .media svg {
         margin-left: 20px
     }
+
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .modal-header {
+        border-bottom: 0!important
+    }
+
+    .modal-content {
+        background-color: transparent!important;
+        border: 0!important
+    }
+
+    
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 576px){
+    .modal {
+        padding-right: 0px!important;
+        background: #00000080
+    }
+
+    .modal-open{
+        padding-right: 0px!important
+    }
+
+    .modal-dialog {
+        max-width: 99%!important
+    }
+
+    .modal-header {
+        border-bottom: 0!important
+    }
+
+    .modal-content {
+        max-width: 100%!important;
+        background-color: transparent!important;
+        border: 0!important
+    }
+
+    .modal-body {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .modal-content .close {
+        color: #fff!important;
+        opacity: 1!important
+    }
+
+    .embed-responsive {
+        width: 60%;
+    }
+
+    .embed-responsive-4by3::before {
+        padding-top: 40%;
+    }
+
 
 
 
