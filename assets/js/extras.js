@@ -43,7 +43,7 @@ $(document).ready(function() {
 });
 
 
-//Mostrar logo
+//Mostrar logo scrolleando la pagina
 $(function() {
     $(window).on("scroll", function() {
         $(window).scrollTop() > 50 ? $(".img_hide").addClass("show-img") : $(".img_hide").removeClass("show-img")

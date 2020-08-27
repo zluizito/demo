@@ -34,7 +34,6 @@
 /**********************************************/
 
 
-
 /********* PRIMER BLOQUE CARDS **********/
 .details-card {
   margin: 120px 0 60px 0
@@ -146,10 +145,6 @@ a.btn-card {
 /**********************************************/
 
 
-
-
-
-
 /********* BLOQUE REPRODUCTOR **********/
 .lib-panel {
     margin-bottom: 20Px;
@@ -227,9 +222,9 @@ a.btn-card {
 }
 
 .imagen-holder {
-    position: relative;
-    display: block;
-    cursor: pointer;
+  position: relative;
+  display: block;
+  cursor: pointer;
 }
 
 .imagen-bg{
@@ -238,11 +233,11 @@ a.btn-card {
 }
 
 .play-image {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -25px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
 }
 
 .play-image:hover{
@@ -263,7 +258,6 @@ a.btn-card {
     margin-left: auto
 }
 /**********************************************/
-
 
 
 /********* PRODUCTOS **********/
@@ -348,9 +342,7 @@ a.btn-card {
 /**********************************************/
 
 
-
-
-
+/********* Boton subir al cielo **********/
 #btnTop {
   display: none;
   position: fixed;
@@ -364,13 +356,11 @@ a.btn-card {
   z-index: 98
 }
 
-
-
 #btnTop:hover {
   background-color: #f35400;
   cursor: pointer
 }
-
+/**********************************************/
 
 
 /********* FOOTER **********/
@@ -451,15 +441,7 @@ a.btn-card {
 #footer .list-inline-item:not(:last-child) {
   margin-right: 15px
 }
-
 /**********************************************/
-
-
-
-
-
-
-
 
 
 /***** Top menu *****/
@@ -471,7 +453,9 @@ a.btn-card {
 .navbar-dark .navbar-nav {
     font-size: 15px;
     color: #fff;
-    width: 320px
+    width: 320px;
+    position:absolute;
+    z-index: 9999999999
 }
  
 .navbar-dark .navbar-nav .nav-link {
@@ -546,7 +530,6 @@ a.btn-card {
   top: 0;
   right: 0;
   height: 100%;
-  width: 10%;
   margin: 0;
   background: #f47735;
 }
@@ -587,5 +570,28 @@ a.btn-card {
 .show-img button {
   margin-right: 10px;
 }
+/**********************************************/
 
 
+/***** Top menu form idioma *****/
+.form-idioma {
+  padding: 30px
+}
+
+.form-idioma select {
+  margin-top: 40px;
+  border-radius: 30px
+}
+
+.form-idioma .flags {
+  float: left;
+  width: 24px;
+  height: 24px;
+  display: block!important
+}
+
+.form-idioma .txt {
+  float: left;
+  padding: 0 10px
+}
+/**********************************************/

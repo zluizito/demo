@@ -15,6 +15,7 @@
 
    <body>
 
+      <!-- Header -->
       <nav class="navbar navbar-dark fixed-top">
          <div class="container-fluid img_hide">
 
@@ -28,7 +29,7 @@
                 <span></span>
             </button>
  
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse oscurecer" id="navbarNav">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                      <a class="nav-link scroll-link" href="#">Inicio</a>
@@ -48,12 +49,21 @@
                   <li class="nav-item">
                      <a class="nav-link scroll-link" href="#">Contáctanos</a>
                   </li>
-               </ul>
+
+                  <!-- Idioma input-->
+                  <div class="form-group form-idioma">
+                     <div><img src="assets/images/flags/en.svg" class="flags"></div><div class="txt">Escoge tu idioma</div><div><img src="assets/images/flags/pe.svg" class="flags"></div>
+                     <select class="form-control">
+                        <option>ES</option>
+                     </select>
+                  </div>
+
+               </ul>             
             </div>
- 
          </div>
     </nav>
 
+      <!-- Slider -->
       <div id="slider_home" class="carousel slide carousel-fade" data-ride="carousel">
          <div class="carousel-inner">
             <div class="carousel-item active">
@@ -348,12 +358,12 @@
          </div>
       </div>
 
-
+      <!-- Boton subir al cielo-->
       <div id="btnTop">
          <i class="fa fa-angle-up"></i>
       </div>
 
-
+      <!-- Boton de redes sociales -->
       <div class="redes-flotantes">
          <div style="margin-right:20px">
             <img border="0" width="59" height="59" src="assets/images/msn.png"/>

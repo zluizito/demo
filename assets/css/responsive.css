@@ -1,5 +1,5 @@
-/* Cards primer bloque */
 @media screen and (max-width:768px){
+    /* Bloque de cards*/
     .details-card {
         margin: 10px 0 0 0
     }
@@ -12,6 +12,7 @@
         margin-left: 20px
     }
 
+    /* Footer*/
     #footer h5 {
         padding-left: 0;
         border-left: transparent;
@@ -19,6 +20,7 @@
         margin-bottom: 10px;
     }
 
+    /* Modal*/
     .modal-header {
         border-bottom: 0!important
     }
@@ -33,16 +35,35 @@
         opacity: 1!important
     }
 
-    
+    /*Slider*/
+    #slider_home .carousel-item h4 {
+        font-size: 24px;
+        text-align: center;
+    }
 
+    /* Centrar barra en titulos*/
+    .productos .titulo:after {
+        left: 38%
+    }
 
+    .marcas .titulo:after {
+        left: 38%
+    }
 
+    /* Menu movil*/
+    .navbar-dark .navbar-nav {
+        width: 380px
+    }
+
+    .navbar-collapse {
+        right: -380px;
+    }
 }
 
 
-
-
+/********* Modal reproductor de video **********/
 @media screen and (min-width: 576px){
+    
     .modal {
         padding-right: 0px!important;
         background: #00000080
@@ -84,8 +105,34 @@
     .embed-responsive-4by3::before {
         padding-top: 40%;
     }
-
-
-
-
 }
+/**********************************************/
+
+
+/********* Oscurer body, despues de darle click al menu **********/
+@media screen and (min-width:991px) {  
+    .oscurecer:after{
+        content: ''; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: opacity .15s ease-in-out;
+        opacity: 0;
+        visibility:hidden;
+        background-color: rgba(0,0,0,.7);
+        pointer-events: none;
+    }
+
+    .oscurecer.show .nav-link{
+        position:relative;
+        z-index:12;
+    }
+    .oscurecer.show:after{
+        z-index:10;
+        opacity:1; 
+        visibility:visible;
+        position: fixed;
+    }
+}
+/**********************************************/
